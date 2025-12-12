@@ -1,0 +1,47 @@
+<Window x:Class="QualisulCameraApp.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Procedimento de Fotos - Recebimento/Expedição" Height="500" Width="600"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="#1A2639">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Procedimento de Fotos - Recebimento/Expedição" 
+                   Foreground="Orange" FontSize="20" FontWeight="Bold" 
+                   HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <TextBlock Text="1. Configuração Inicial" Foreground="White" FontSize="16" FontWeight="Bold" Margin="0,0,0,5"/>
+                <TextBlock Text="• Conecte a webcam ou inicie o DroidCam (para usar o celular)." Foreground="#DDDDDD" TextWrapping="Wrap" Margin="10,0,0,2"/>
+                <TextBlock Text="• Selecione a câmera na lista. Use o botão redondo 'Atualizar' se ela não aparecer." Foreground="#DDDDDD" TextWrapping="Wrap" Margin="10,0,0,2"/>
+                <TextBlock Text="• Selecione a 'Pasta do Cliente' (Local onde as pastas das OS serão criadas)." Foreground="#DDDDDD" TextWrapping="Wrap" Margin="10,0,0,15"/>
+
+                <TextBlock Text="2. Iniciando uma Sessão" Foreground="White" FontSize="16" FontWeight="Bold" Margin="0,0,0,5"/>
+                <TextBlock Text="• Nova OS: Digite o número no campo 'Ordem de Serviço' (Ex: OS 1234)." Foreground="#DDDDDD" TextWrapping="Wrap" Margin="10,0,0,2"/>
+                <TextBlock Text="• Continuar Existente: Se a OS já existe, selecione-a na lista 'Continuar OS Existente' para manter a seqüência de fotos." Foreground="#DDDDDD" TextWrapping="Wrap" Margin="10,0,0,2"/>
+                <TextBlock Text="• Clique no botão VERDE 'INICIAR SESSÃO'." Foreground="#DDDDDD" TextWrapping="Wrap" Margin="10,0,0,15"/>
+
+                <TextBlock Text="3. Captura e Galeria" Foreground="White" FontSize="16" FontWeight="Bold" Margin="0,0,0,5"/>
+                <TextBlock Text="• Clique no botão da Câmera para capturar." Foreground="#DDDDDD" TextWrapping="Wrap" Margin="10,0,0,2"/>
+                <TextBlock Text="• As fotos são salvas automaticamente na pasta da OS." Foreground="#DDDDDD" TextWrapping="Wrap" Margin="10,0,0,2"/>
+                <TextBlock Text="• Use o campo 'TAG' (opcional) para nomear peças específicas antes de capturar." Foreground="#DDDDDD" TextWrapping="Wrap" Margin="10,0,0,2"/>
+                <TextBlock Text="• Para Excluir: Passe o mouse sobre a foto na galeria e clique no ícone da lixeira." Foreground="#DDDDDD" TextWrapping="Wrap" Margin="10,0,0,15"/>
+
+                <TextBlock Text="4. Finalização" Foreground="White" FontSize="16" FontWeight="Bold" Margin="0,0,0,5"/>
+                <TextBlock Text="• Clique no botão VERMELHO 'ENCERRAR SESSÃO' ao terminar." Foreground="#DDDDDD" TextWrapping="Wrap" Margin="10,0,0,2"/>
+                <TextBlock Text="• Renomear (Correção): Se digitou a OS errada ao iniciar, preencha o campo 'Renomear OS' com o nome correto ANTES de clicar em Encerrar." Foreground="#DDDDDD" TextWrapping="Wrap" Margin="10,0,0,2"/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <Button Grid.Row="2" Content="Fechar" IsCancel="True" Click="CloseButton_Click"
+                Width="100" Height="30" Margin="0,20,0,0"
+                Background="#334455" Foreground="White" BorderThickness="0"/>
+    </Grid>
+</Window>
