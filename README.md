@@ -2,6 +2,8 @@
 
 Aplicação desktop Windows para captura de fotos profissional com organização por Ordem de Serviço (OS).
 
+![Screenshot do Qualisul Camera App](screenshot.png)
+
 ## 🎯 Características
 
 - 📸 **Captura de Fotos**: Suporte para webcams e câmeras de celular via DroidCam/Iriun
